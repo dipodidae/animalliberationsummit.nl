@@ -7,7 +7,12 @@
       We are the animal liberation movement. We believe that animals should not be locked up, raped and killed. We want animals to be able to do what they want. We're going to take care of that, because we're the animal liberation movement.
     </p>
     <p>
-      Sometimes it feels lonely and pointless. But there are many of us and we want the same thing. During the Animal Liberation Summit we meet our fellow activists. We will laugh, talk, discuss and eat together. Because we need each other.
+      Sometimes it feels lonely and pointless. But there are many of us and we want the same thing. During the Animal Liberation Summit we meet our fellow activists. We will laugh, talk, discuss and eat together. <span class="text-blue-700 dark:text-yellow-200">Because we need each other.</span>
     </p>
+    <div class="flex">
+      <UButton class="ml-auto" label="Button" color="blue" variant="outline" size="xl" icon="i-heroicons-envelope-20-solid" to="mailto:info@animalliberationsummit.nl">
+        info@animalliberationsummit.nl
+      </UButton>
+    </div>
   </div>
 </template>
