@@ -4,4 +4,7 @@ export default {
       sans: ['Atkinson Hyperlegible', 'Helvetica', 'Arial', 'ui-sans-serif', 'sans-serif'],
     },
   },
+  plugins: [
+    require('@tailwindcss/typography'),
+  ],
 }
