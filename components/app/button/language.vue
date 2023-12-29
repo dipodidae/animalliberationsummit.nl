@@ -5,8 +5,7 @@ const value = computed({
   get: () => {
     return {
       code: locale.value,
-      id: locale.value,
-      label: locales.value.find(l => l.id === locale.value).label,
+      label: locales.value.find(l => l.code === locale.value).label,
     }
   },
   set: (value) => {

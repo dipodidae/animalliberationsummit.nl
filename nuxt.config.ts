@@ -10,12 +10,10 @@ export default defineNuxtConfig({
     locales: [
       {
         code: 'en',
-        id: 'en',
         label: 'English',
       },
       {
         code: 'nl',
-        id: 'nl',
         label: 'Nederlands',
       },
     ],
