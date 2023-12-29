@@ -1,13 +1,20 @@
 <script setup>
 const { locale, locales, setLocale } = useI18n()
 
-const availableLocales = computed(() => {
-  return (locales.value).filter(availableLocale => availableLocale.code !== locale.value)
+const value = computed({
+  get: () => {
+    return {
+      code: locale.value,
+      id: locale.value,
+      label: locales.value.find(l => l.id === locale.value).label,
+    }
+  },
+  set: (value) => {
+    setLocale(value.code)
+  },
 })
 </script>
 
 <template>
-  <UDropdown :items="availableLocales" :popper="{ placement: 'bottom-start' }">
-    <UButton color="white" :label="locale.label" trailing-icon="i-heroicons-chevron-down-20-solid" />
-  </UDropdown>
+  <USelectMenu v-model="value" :options="locales" by="code" />
 </template>

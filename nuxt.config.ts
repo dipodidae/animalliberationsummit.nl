@@ -7,14 +7,15 @@ export default defineNuxtConfig({
     },
   },
   i18n: {
-    defaultLocale: 'en',
     locales: [
       {
         code: 'en',
+        id: 'en',
         label: 'English',
       },
       {
         code: 'nl',
+        id: 'nl',
         label: 'Nederlands',
       },
     ],
