@@ -1,12 +1,9 @@
 <template>
-  <AppControls />
-  <div class="min-h-screen flex">
-    <div class="flex flex-1 justify-center items-center dark:bg-stone-800 bg-pink-50">
-      <ContentDoc path="/intro" class="w-[32em] mx-auto p-4 prose lg:prose-xl text-stone-900 dark:text-pink-100 font-bold" />
-    </div>
-
-    <div class="flex-1 flex justify-center items-center dark:bg-stone-900 bg-pink-100">
-      <AppLogo class="w-[40em]" />
-    </div>
+  <div class="antialiased dark:bg-stone-900 bg-pink-50 text-stone-800 dark:text-pink-50">
+    <AppHeader />
+    <AppSidebar />
+    <main class="lg:mr-[32em] xl:mr-[45em] 2xl:mr-[60em] h-auto pt-20">
+      <NuxtPage />
+    </main>
   </div>
 </template>

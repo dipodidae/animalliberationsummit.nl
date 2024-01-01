@@ -1,9 +1,5 @@
-<script setup lang="ts">
-const colorMode = useColorMode()
-
-const source = computed(() => colorMode.value === 'dark' ? '/logo/light.svg' : '/logo/dark.svg')
-</script>
-
 <template>
-  <img :src="source" alt="Animal Liberation Summit logo">
+  <svg class="fill-current text-stone-800 dark:text-pink-50" width="auto" height="auto">
+    <use href="/logo.svg#logo" />
+  </svg>
 </template>
