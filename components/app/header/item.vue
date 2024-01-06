@@ -9,8 +9,8 @@ const props = defineProps<{
 
 <template>
   <li class="relative">
-    <AppLanguageLink :to="props.to" class="text-sm/6 font-semibold flex items-center gap-1 hover:text-primary">
+    <LanguageLink :to="props.to" class="text-sm/6 font-semibold flex items-center gap-1 hover:text-primary">
       <slot />
-    </AppLanguageLink>
+    </LanguageLink>
   </li>
 </template>

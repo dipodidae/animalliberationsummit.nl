@@ -1,12 +1,12 @@
 <template>
-  <header class="bg-background/75 backdrop-blur border-b -mb-px fixed right-0 left-0 top-0 z-50 border-primary-200/75 dark:border-primary-900/50  flex items-center justify-between gap-3 h-[--header-height] p-6">
+  <header class="bg-background/75 backdrop-blur -mb-px fixed right-0 left-0 top-0 z-50  flex items-center justify-between gap-3 h-[--header-height] p-6 border-b dark:border-stone-600/20 border-pink-300/30">
     <div class="lg:flex-1 flex items-center gap-1.5">
-      <NuxtLink to="/" class="flex gap-3">
+      <LanguageLink :to="{ name: 'index' }" class="flex gap-3">
         <AppLogoGraphicsOnly />
-        <div class="">
+        <div>
           Animal Liberation Summit
         </div>
-      </NuxtLink>
+      </LanguageLink>
     </div>
     <ul class="items-center gap-x-8 hidden lg:flex">
       <AppHeaderItem :path="{ name: 'index' }">
@@ -26,7 +26,7 @@
       </AppHeaderItem>
     </ul>
     <div class="flex items-center justify-end lg:flex-1 gap-1.5">
-      <AppButtonLanguage />
+      <LanguagePicker />
       <AppButtonColorMode />
     </div>
   </header>
