@@ -9,7 +9,7 @@
               Animal Liberation Summit
             </div>
             <div class="text-sm">
-              Sat. May 12th - Plantage Doklaan 8-12, Amsterdam
+              {{ $t('event-date') }} - Plantage Doklaan 8-12, Amsterdam
             </div>
           </div>
         </div>
