@@ -1,5 +1,5 @@
 <template>
-  <header class="bg-background/75 backdrop-blur -mb-px fixed right-0 left-0 top-0 z-50  flex items-center justify-between gap-3 h-[--header-height] p-6 border-b dark:border-stone-600/20 border-pink-300/30">
+  <header class="bg-background/75 backdrop-blur -mb-px fixed right-0 left-0 top-0 z-50  flex items-center justify-between gap-3 min-h-[6em] p-6 border-b dark:border-stone-600/20 border-pink-300/30">
     <div class="lg:flex-1 flex items-center gap-1.5">
       <LanguageLink :path="{ name: 'index' }" class="flex gap-3 group hover:text-pink-700 dark:hover:text-pink-400 ">
         <AppLogoGraphicsOnly class="group-hover:text-pink-700 dark:group-hover:text-pink-400 w-[6em] h-[6em]" />
