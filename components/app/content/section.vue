@@ -9,7 +9,7 @@ const { locale } = useI18n()
 const classList = computed(() => {
   if (props.uneven) {
     return `relative isolate after:absolute after:content-[''] after:skew-y-2 after:bg-gradient-to-br
-          from-pink-100 to-pink-200 dark:after:from-stone-800 dark:after:to-stone-700 after:z-[-1] after:inset-0 after:opacity-40`
+          from-pink-100 to-pink-200 dark:after:from-stone-800 dark:after:to-stone-700 after:z-[-1] after:inset-0 after:opacity-20`
   }
 
   return ''

@@ -15,5 +15,5 @@ const value = computed({
 </script>
 
 <template>
-  <ClientOnly><USelectMenu v-model="value" :options="locales" by="code" /></ClientOnly>
+  <ClientOnly><USelectMenu v-model="value" :options="locales" by="code" size="lg" /></ClientOnly>
 </template>

@@ -32,10 +32,12 @@ export default defineNuxtConfig({
       {
         code: 'en',
         label: 'English',
+        file: 'lang/en.json',
       },
       {
         code: 'nl',
         label: 'Nederlands',
+        file: 'lang/nl.json',
       },
     ],
   },

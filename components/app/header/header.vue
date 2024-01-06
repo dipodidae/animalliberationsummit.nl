@@ -9,21 +9,21 @@
       </NuxtLink>
     </div>
     <ul class="items-center gap-x-8 hidden lg:flex">
-      <li class="relative">
-        <NuxtLink class="text-sm/6 font-semibold flex items-center gap-1 hover:text-primary" href="/">
-          Home
-        </NuxtLink>
-      </li>
-      <li class="relative">
-        <NuxtLink class="text-sm/6 font-semibold flex items-center gap-1 hover:text-primary" href="/program">
-          Programma
-        </NuxtLink>
-      </li>
-      <li class="relative">
-        <NuxtLink class="text-sm/6 font-semibold flex items-center gap-1 hover:text-primary" href="/">
-          Contact
-        </NuxtLink>
-      </li>
+      <AppHeaderItem :path="{ name: 'index' }">
+        {{ $t('home') }}
+      </AppHeaderItem>
+      <AppHeaderItem :path="{ name: 'program' }">
+        {{ $t('program') }}
+      </AppHeaderItem>
+      <AppHeaderItem :path="{ name: 'index' }">
+        {{ $t('contact') }}
+      </AppHeaderItem>
+      <AppHeaderItem to="https://facebook.com/animalliberationsummit">
+        <UIcon class="w-6 h-6" name="mdi-facebook" />
+      </AppHeaderItem>
+      <AppHeaderItem to="https://instagram.com/animalliberationsummit">
+        <UIcon class="w-6 h-6" name="mdi-instagram" />
+      </AppHeaderItem>
     </ul>
     <div class="flex items-center justify-end lg:flex-1 gap-1.5">
       <AppButtonLanguage />
