@@ -1,3 +1,3 @@
 <template>
-  The program will be announced soon.
+  <AppContentSection path="program" />
 </template>

@@ -22,7 +22,7 @@
       <AppHeaderItem :path="{ name: 'program' }">
         {{ $t('program') }}
       </AppHeaderItem>
-      <AppHeaderItem :path="{ name: 'index' }">
+      <AppHeaderItem :path="{ name: 'contact' }">
         {{ $t('contact') }}
       </AppHeaderItem>
       <AppHeaderItem to="https://facebook.com/animalliberationsummit">

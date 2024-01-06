@@ -1,3 +1,3 @@
 <template>
-  Contact
+  <AppContentSection path="contact" />
 </template>

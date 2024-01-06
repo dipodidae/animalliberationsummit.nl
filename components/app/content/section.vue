@@ -20,6 +20,6 @@ const path = computed(() => `${locale.value}/${props.path}`)
 
 <template>
   <section class="py-32 lg:py-[8em] xl:py-[18em] px-12 flex justify-center" :class="classList">
-    <ContentDoc :path="path" class="prose prose-headings:text-stone-900 prose-p:text-stone-700 dark:prose-headings:text-white dark:prose-p:text-pink-100 lg:prose-xl" :head="false" />
+    <ContentDoc :path="path" class="prose dark:prose-invert prose-headings:text-stone-900 prose-p:text-stone-700 dark:prose-headings:text-white prose-a:no-underline dark:prose-p:text-pink-100 lg:prose-xl dark:prose-a:text-pink-200" :head="false" />
   </section>
 </template>
