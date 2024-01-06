@@ -26,10 +26,10 @@
         {{ $t('contact') }}
       </AppHeaderItem>
       <AppHeaderItem to="https://facebook.com/animalliberationsummit">
-        <UIcon class="w-6 h-6" name="mdi-facebook" />
+        <UIcon class="w-6 h-6" name="mdi:facebook" />
       </AppHeaderItem>
       <AppHeaderItem to="https://instagram.com/animalliberationsummit">
-        <UIcon class="w-6 h-6" name="mdi-instagram" />
+        <UIcon class="w-6 h-6" name="mdi:instagram" />
       </AppHeaderItem>
     </ul>
     <div class="flex items-center justify-end lg:flex-1 gap-1.5">
