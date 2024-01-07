@@ -31,7 +31,7 @@
       <AppHeaderItem :path="{ name: 'contact' }">
         {{ $t('contact') }}
       </AppHeaderItem>
-      <AppHeaderItem to="https://facebook.com/animalliberationsummit" target="_blank">
+      <AppHeaderItem to="https://www.facebook.com/people/Animal-Liberation-Summit/61554928266179/" target="_blank">
         <UIcon class="w-6 h-6" name="mdi:facebook" />
       </AppHeaderItem>
       <AppHeaderItem to="https://instagram.com/animalliberationsummit" target="_blank">

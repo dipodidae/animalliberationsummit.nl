@@ -26,7 +26,7 @@ const items = [
     {
       label: 'Facebook',
       icon: 'mdi:facebook',
-      to: 'https://facebook.com/animalliberationsummit',
+      to: 'https://www.facebook.com/people/Animal-Liberation-Summit/61554928266179/ ',
       target: '_blank',
     },
     {
