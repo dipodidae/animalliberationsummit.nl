@@ -1,7 +1,8 @@
 <template>
   <header class="bg-background/75 backdrop-blur -mb-px fixed right-0 left-0 top-0 z-50  flex items-center justify-between gap-3 min-h-[6em] p-6 border-b dark:border-stone-600/20 border-pink-300/30">
     <div class="lg:flex-1 flex items-center gap-1.5">
-      <LanguageLink :path="{ name: 'index' }" class="flex gap-3 group hover:text-pink-700 dark:hover:text-pink-400 ">
+      <AppHeaderMenuMobile class="lg:hidden" />
+      <LanguageLink :path="{ name: 'index' }" class="hidden lg:flex gap-3 group hover:text-pink-700 dark:hover:text-pink-400 ">
         <AppLogoGraphicsOnly class="group-hover:text-pink-700 dark:group-hover:text-pink-400 w-[6em] h-[6em]" />
         <div class="flex items-center leading-none flex-col justify-center">
           <div>
@@ -25,10 +26,10 @@
       <AppHeaderItem :path="{ name: 'contact' }">
         {{ $t('contact') }}
       </AppHeaderItem>
-      <AppHeaderItem to="https://facebook.com/animalliberationsummit">
+      <AppHeaderItem to="https://facebook.com/animalliberationsummit" target="_blank">
         <UIcon class="w-6 h-6" name="mdi:facebook" />
       </AppHeaderItem>
-      <AppHeaderItem to="https://instagram.com/animalliberationsummit">
+      <AppHeaderItem to="https://instagram.com/animalliberationsummit" target="_blank">
         <UIcon class="w-6 h-6" name="mdi:instagram" />
       </AppHeaderItem>
     </ul>
