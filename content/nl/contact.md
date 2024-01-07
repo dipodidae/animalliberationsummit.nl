@@ -5,4 +5,4 @@
 - [Onze Facebook pagina](https://www.facebook.com/animalliberationsummit)
 
 ## Of email ons:
-- [animalliberationsummit@proton.me](mailto:animalliberationsummit@proton.me)
+- [info@animalliberationsummit.nl](mailto:info@animalliberationsummit.nl)
