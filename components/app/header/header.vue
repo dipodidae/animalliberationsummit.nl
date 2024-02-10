@@ -25,6 +25,9 @@
       <AppHeaderItem :path="{ name: 'index' }">
         {{ $t('home') }}
       </AppHeaderItem>
+      <AppHeaderItem :path="{ name: 'info' }">
+        {{ $t('what-is-the-summit') }}
+      </AppHeaderItem>
       <AppHeaderItem :path="{ name: 'program' }">
         {{ $t('program') }}
       </AppHeaderItem>

@@ -8,8 +8,5 @@
       {{ $t('event-date') }} - Plantage Doklaan 8-12, Amsterdam
     </div>
   </div>
-  <AppContentSection path="home/intro" />
-  <AppContentSection path="home/practical-intro" uneven />
-  <AppContentSection path="home/practical" />
-  <AppContentSection path="home/code-of-conduct" uneven />
+  <AppContentSection path="home" />
 </template>
