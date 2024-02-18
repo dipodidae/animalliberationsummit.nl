@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       bodyAttrs: {
-        class: 'bg-pink-50 text-stone-900 dark:bg-stone-900 dark:text-pink-50',
+        class: 'bg-pink-50 text-stone-900 dark:bg-stone-900 dark:text-pink-50 pt-[50ch]',
       },
       title: appTitle,
       titleTemplate: (pageTitle) => {
@@ -55,7 +55,13 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ['@nuxt/ui', '@nuxtjs/google-fonts', '@nuxt/content', '@nuxtjs/i18n'],
+  modules: [
+    '@nuxt/ui',
+    '@nuxtjs/google-fonts',
+    '@nuxt/content',
+    '@nuxtjs/i18n',
+    "@nuxt/image"
+  ],
   googleFonts: {
     families: {
       'Atkinson+Hyperlegible': true,

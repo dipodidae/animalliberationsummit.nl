@@ -1,25 +1,16 @@
 <script setup lang="ts">
 const props = defineProps<{
-  path: string
-  uneven?: boolean
+  path: string,
+  image: string,
+  imageCaption: string
 }>()
-
-const { locale } = useI18n()
-
-const classList = computed(() => {
-  if (props.uneven) {
-    return `relative isolate after:absolute after:content-[''] after:skew-y-2 after:bg-gradient-to-br
-          from-pink-100 to-pink-200 dark:after:from-stone-800 dark:after:to-stone-700 after:z-[-1] after:inset-0 after:opacity-20`
-  }
-
-  return ''
-})
-
-const path = computed(() => `${locale.value}/${props.path}`)
 </script>
 
 <template>
-  <section class="py-32 lg:py-[8em] xl:py-[18em] px-12 flex justify-center" :class="classList">
-    <ContentDoc :path="path" class="prose dark:prose-invert prose-headings:text-stone-900 prose-p:text-stone-700 dark:prose-headings:text-white prose-a:no-underline dark:prose-p:text-pink-100 lg:prose-xl dark:prose-a:text-pink-200" :head="false" />
+  <section class="mx-auto flex gap-4 md:gap-[8ch] flex-col md:flex-row ">
+    <AppContent :path="props.path" />
+    <div class="md:ml-auto" v-if="props.image">
+      <AppContentSectionImage :image="props.image" :imageCaption="props.imageCaption" class="md:w-[44ch]" />
+    </div>
   </section>
 </template>

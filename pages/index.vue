@@ -1,12 +1,8 @@
 <template>
-  <div class="border-b  dark:border-stone-600/20 border-pink-300/30 p-4 flex flex-col items-center lg:hidden">
-    <AppLogo class="mb-4" />
-    <div class="text-xl">
-      Animal Liberation Summit
-    </div>
-    <div class="text-sm">
-      {{ $t('event-date') }} - Plantage Doklaan 8-12, Amsterdam
+  <div class="flex flex-col gap-5 md:gap-10 md:flex-row-reverse">
+    <AppContent path="home" class="md:prose-lg lg:prose-xl xl:prose-2xl" />
+    <div class="md:w-[40ch] lg:w-[60ch] shrink-0 ">
+      <AppContentSectionImage image="/images/poster.jpg" />
     </div>
   </div>
-  <AppContentSection path="home" />
 </template>

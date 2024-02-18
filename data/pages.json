@@ -1,0 +1,22 @@
+[
+  {
+    "i18n-key": "home",
+    "icon": "mdi:home",
+    "path": { "name": "index" }
+  },
+  {
+    "i18n-key": "info",
+    "icon": "mdi:information",
+    "path": { "name": "info" }
+  },
+  {
+    "i18n-key": "program",
+    "icon": "mdi:book",
+    "path": { "name": "program" }
+  },
+  {
+    "i18n-key": "contact",
+    "icon": "mdi:email",
+    "path": { "name": "contact" }
+  }
+]
