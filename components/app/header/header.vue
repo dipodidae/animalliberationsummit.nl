@@ -13,8 +13,8 @@ import pages from '~/data/pages.json'
             Animal Liberation Summit
           </div>
         </div>
-        <LanguageLink :path="{ name: 'index' }" class="hidden lg:flex gap-3 group hover:text-pink-200 ">
-          <AppLogoGraphicsOnly class="group-hover:text-pink-200  w-[6em] h-[6em]" />
+        <LanguageLink :path="{ name: 'index' }" class="hidden lg:flex gap-3 group text-pink-50 hover:text-pink-200 ">
+          <AppLogoGraphicsOnly class="group-hover:text-pink-200 text-pink-50  w-[6em] h-[6em]" />
           <AppHeaderLogoText />
         </LanguageLink>
       </div>

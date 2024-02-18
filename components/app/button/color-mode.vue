@@ -15,10 +15,8 @@ const icon = computed(() => isDark.value ? 'i-heroicons-moon-20-solid' : 'i-hero
 
 <template>
   <ClientOnly>
-    <UButton :icon="icon" color="gray" variant="ghost" aria-label="Theme" @click="isDark = !isDark" />
-
-    <template #fallback>
-      <div class="w-8 h-8" />
-    </template>
+    <a href="#" @click="isDark = !isDark">
+      <UIcon :name="icon" class="text-lg text-pink-50" />
+    </a>
   </ClientOnly>
 </template>
