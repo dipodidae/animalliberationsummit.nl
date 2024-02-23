@@ -1,7 +1,7 @@
 <template>
-  <div class="flex items-center leading-none flex-col justify-center text-nowrap">
+  <div class="flex flex-col items-center justify-center text-nowrap leading-none">
     <div>
-      <div class="text-bold text-lg mb-1 font-bold">
+      <div class="mb-1 text-lg font-bold">
         Animal Liberation Summit
       </div>
       <div class="text-sm">

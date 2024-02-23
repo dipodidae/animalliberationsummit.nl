@@ -7,7 +7,7 @@ const props = defineProps<{
 </script>
 
 <template>
-  <section class="mx-auto flex gap-4 md:gap-[8ch] flex-col md:flex-row ">
+  <section class="mx-auto flex flex-col gap-4 md:flex-row md:gap-[8ch] ">
     <AppContent :path="props.path" />
     <div v-if="props.image" class="md:ml-auto">
       <AppContentSectionImage :image="props.image" :image-caption="props.imageCaption" class="md:w-[44ch]" />

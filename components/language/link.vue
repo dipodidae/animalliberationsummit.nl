@@ -5,17 +5,25 @@ const props = defineProps<{
   }
   to?: string
   href?: string
+  activeClass?: string
 }>()
 
 const localePath = useLocalePath()
 const to = computed(() => props.to || localePath(props.path!))
+
+const attributes = computed(() => {
+  if (props.href)
+    return { href: props.href, target: '_blank' }
+
+  if (props.to || props.path)
+    return { to: to.value }
+
+  return {}
+})
 </script>
 
 <template>
-  <NuxtLink v-if="props.href" :href="props.href" target="_blank">
+  <ULink :active-class="props.activeClass" v-bind="attributes">
     <slot />
-  </NuxtLink>
-  <NuxtLink v-else :to="to">
-    <slot />
-  </NuxtLink>
+  </ULink>
 </template>

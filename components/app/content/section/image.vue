@@ -6,9 +6,9 @@ const props = defineProps<{
 </script>
 
 <template>
-  <div class="rounded-md overflow-hidden border border-stone-700">
+  <div class="overflow-hidden rounded-md border border-stone-700">
     <img :src="props.image" class="w-full">
-    <div v-if="props.imageCaption" class="border-t border-stone-700 p-4 text-stone-700 text-center">
+    <div v-if="props.imageCaption" class="border-t border-stone-700 p-4 text-center text-stone-700">
       {{ props.imageCaption }}
     </div>
   </div>
