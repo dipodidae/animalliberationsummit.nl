@@ -16,13 +16,14 @@
     "@nuxt/content": "latest",
     "@nuxt/devtools": "latest",
     "@nuxt/image": "latest",
-    "@nuxt/ui": "latest",
+    "@nuxt/ui": "2.14.1",
     "@nuxtjs/google-fonts": "latest",
     "@nuxtjs/i18n": "latest",
     "@tailwindcss/typography": "^0.5.10",
-    "eslint": "^8.56.0",
-    "nuxt": "^3.8.2",
+    "eslint": "^8.57.0",
+    "nuxt": "^3.10.3",
+    "typescript": "^5.3.3",
     "vue": "^3.3.12",
-    "vue-router": "^4.2.5"
+    "vue-router": "^4.3.0"
   }
 }

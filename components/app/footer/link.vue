@@ -1,5 +1,5 @@
 <script setup lang="ts">
-defineProps<{
+const props = defineProps<{
   path?: {
     name: string
   }
@@ -8,7 +8,7 @@ defineProps<{
 </script>
 
 <template>
-  <LanguageLink v-bind="$attrs" class="text-stone-400 hover:underline decoration-pink-200/0 hover:decoration-pink-200 transition-all  underline-offset-4">
-    <slot />	
+  <LanguageLink v-bind="props" class="text-stone-400 hover:underline decoration-pink-200/0 hover:decoration-pink-200 transition-all  underline-offset-4">
+    <slot />
   </LanguageLink>
 </template>

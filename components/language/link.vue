@@ -3,7 +3,7 @@ const props = defineProps<{
   path?: {
     name: string
   }
-  to?: string,
+  to?: string
   href?: string
 }>()
 
@@ -15,7 +15,7 @@ const to = computed(() => props.to || localePath(props.path!))
   <NuxtLink v-if="props.href" :href="props.href" target="_blank">
     <slot />
   </NuxtLink>
-  <NuxtLink :to="to" v-else>
+  <NuxtLink v-else :to="to">
     <slot />
   </NuxtLink>
 </template>

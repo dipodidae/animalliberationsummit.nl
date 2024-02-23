@@ -1,4 +1,3 @@
-
 <script setup lang="ts">
 const props = defineProps<{
   image: string
@@ -8,7 +7,9 @@ const props = defineProps<{
 
 <template>
   <div class="rounded-md overflow-hidden border border-stone-700">
-    <img :src="props.image" class="w-full"/>
-    <div class="border-t border-stone-700 p-4 text-stone-700 text-center" v-if="props.imageCaption">{{ props.imageCaption  }}</div>
+    <img :src="props.image" class="w-full">
+    <div v-if="props.imageCaption" class="border-t border-stone-700 p-4 text-stone-700 text-center">
+      {{ props.imageCaption }}
+    </div>
   </div>
 </template>

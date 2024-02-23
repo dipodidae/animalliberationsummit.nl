@@ -60,7 +60,7 @@ export default defineNuxtConfig({
     '@nuxtjs/google-fonts',
     '@nuxt/content',
     '@nuxtjs/i18n',
-    "@nuxt/image"
+    '@nuxt/image',
   ],
   googleFonts: {
     families: {
