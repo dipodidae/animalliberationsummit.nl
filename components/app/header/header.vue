@@ -4,7 +4,7 @@ import pages from '~/data/pages.json'
 </script>
 
 <template>
-  <header class="fixed inset-x-0 top-0 flex flex-col justify-end bg-cover bg-center shadow-lg shadow-stone-300 md:h-[50ch] dark:shadow-stone-950" style="background-image: url('/images/header.jpg')">
+  <header class="fixed inset-x-0 top-0 flex flex-col justify-end bg-cover bg-center shadow-lg shadow-stone-300 md:h-[20ch] lg:h-[30ch] xl:h-[40ch] 2xl:h-[50ch] dark:shadow-stone-950" style="background-image: url('/images/header.jpg')">
     <nav class="sticky top-0 flex items-center justify-between gap-2 border-pink-200/20 bg-stone-950/50 p-5 md:border-t">
       <div class="flex items-center gap-1.5 lg:flex-1">
         <div class="flex items-center gap-2 leading-[0.8] lg:hidden">
